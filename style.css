@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fffaf7;
+    color: #555;
+}
+
+/* NAVBAR */
+
+nav {
+    background: #ffe4ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff5e9c;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff5e9c;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff2f7f;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(to right, #ffdce8, #fff5ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    color: #ff4f94;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background: #ff69a6;
+    color: white;
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #ff4f94;
+    transform: scale(1.05);
+}
+
+/* ABOUT */
+
+.about {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: #ff4f94;
+    margin-bottom: 20px;
+}
+
+.card p {
+    line-height: 1.9;
+}
+
+/* PAGE HEADER */
+
+.page-header {
+    background: linear-gradient(to right, #ffcfe0, #fff0ea);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.page-header h1 {
+    font-size: 55px;
+    color: #ff4f94;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 18px;
+}
+
+/* PROFIL */
+
+.profil-container {
+    padding: 80px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profil-box {
+    background: white;
+    width: 350px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.profil-box h2 {
+    color: #ff4f94;
+    margin-bottom: 20px;
+}
+
+.profil-box p,
+.profil-box li {
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+
+.profil-box ul {
+    padding-left: 20px;
+}
+
+/* JURUSAN */
+
+.jurusan-container {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.jurusan-card {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.jurusan-card h2 {
+    color: #ff4f94;
+    margin-bottom: 20px;
+}
+
+.jurusan-card p {
+    line-height: 1.9;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #ffb7cf;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+}

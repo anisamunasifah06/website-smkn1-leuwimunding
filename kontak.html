@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Sekolah</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #fff8f5;
+            color: #444;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 22px 8%;
+            background: #ffe4ec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h1 {
+            color: #ff4f9a;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ff4f9a;
+            font-weight: 600;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff86b7;
+        }
+
+        /* HEADER */
+        .hero {
+            width: 100%;
+            padding: 90px 8%;
+            background: linear-gradient(to right, #ffd6e5, #fff0ea);
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 75px;
+            color: #ff4f9a;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: #555;
+        }
+
+        /* KONTAK */
+        .container {
+            width: 85%;
+            margin: 70px auto;
+        }
+
+        .contact-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 45px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-info h3 {
+            font-size: 42px;
+            color: #ff4f9a;
+            margin-bottom: 30px;
+        }
+
+        .info {
+            margin-bottom: 25px;
+        }
+
+        .info h4 {
+            color: #ff4f9a;
+            margin-bottom: 8px;
+            font-size: 22px;
+        }
+
+        .info p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* BOX KANAN */
+        .side-box {
+            background: linear-gradient(to bottom, #ffe0eb, #fff3ef);
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .side-box h3 {
+            color: #ff4f9a;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .side-box p {
+            font-size: 19px;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #ff5fa2;
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff3f8d;
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 80px;
+            background: #ff8fbd;
+            color: white;
+            text-align: center;
+            padding: 28px;
+            font-size: 18px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px) {
+
+            .hero h2 {
+                font-size: 50px;
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>SMKN 1 Leuwimunding</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jurusan.html">Jurusan</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="hero">
+        <h2>Kontak Sekolah</h2>
+        <p>Informasi lengkap untuk menghubungi SMKN 1 Leuwimunding</p>
+    </section>
+
+    <!-- ISI -->
+    <div class="container">
+
+        <div class="contact-box">
+
+            <!-- KIRI -->
+            <div class="contact-info">
+
+                <h3>Hubungi Kami</h3>
+
+                <div class="info">
+                    <h4>📍 Alamat</h4>
+                    <p>Jl. Raya Prapatan-Rajagaluh KM.02, Blok Kliwon, Desa Praungjaya,
+                        Kec. Leuwimunding, Kab. Majalengka.
+                    </p>
+                </div>
+
+                <div class="info">
+                    <h4>📞 Telepon</h4>
+                    <p>(0233) 123456</p>
+                </div>
+
+                <div class="info">
+                    <h4>📧 Email</h4>
+                    <p>smkn1leuwimunding@gmail.com</p>
+                </div>
+
+                <div class="info">
+                    <h4>🌐 Website</h4>
+                    <p>www.SMK Negri 1 Leuwimunding.sch.id</p>
+                </div>
+
+            </div>
+
+            <!-- KANAN -->
+            <div class="side-box">
+
+                <h3>Terima Kasih ✨</h3>
+
+                <p>
+                    Jika ada pertanyaan mengenai sekolah,
+                    jurusan, maupun informasi pendaftaran,
+                    silakan hubungi kontak yang tersedia.
+                </p>
+
+                <a href="index.html" class="btn">
+                    ← Kembali ke Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 SMKN 1 Leuwimunding | Dibuat oleh Anisa Munasifah
+    </footer>
+
+</body>
+
+</html>
